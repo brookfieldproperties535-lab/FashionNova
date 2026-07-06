@@ -1,0 +1,239 @@
+/* ══════════════════════════════════════════════════════════════
+   panel-theme.css  —  User panel skin, colour override & UX polish
+   Primary bg : #EAEDF0  |  Cards : #fff  |  Accent : #000
+   ══════════════════════════════════════════════════════════════ */
+
+/* ── Base ─────────────────────────────────────────────────── */
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: #EAEDF0;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* ── Page fade-in on load ─────────────────────────────────── */
+.main {
+  animation: panelFadeIn 0.45s cubic-bezier(0.22, 1, 0.36, 1) both;
+}
+@keyframes panelFadeIn {
+  from { opacity: 0; transform: translateY(10px); }
+  to   { opacity: 1; transform: translateY(0);    }
+}
+
+/* ── Preloader background matches page ────────────────────── */
+.preloader {
+  background-color: #EAEDF0 !important;
+}
+
+/* ── Scrollbar ────────────────────────────────────────────── */
+::-webkit-scrollbar          { width: 6px; height: 6px; }
+::-webkit-scrollbar-track    { background: #EAEDF0; }
+::-webkit-scrollbar-thumb    { background: rgba(0,0,0,0.18); border-radius: 4px; }
+::-webkit-scrollbar-thumb:hover { background: rgba(0,0,0,0.32); }
+
+/* ── Cards  ───────────────────────────────────────────────── */
+/* Any element with both .border and .rounded becomes a white
+   floating card against the #EAEDF0 page background.        */
+.border.rounded {
+  background-color: #fff;
+  border-color: rgba(0, 0, 0, 0.07) !important;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.06),
+              0 4px 16px rgba(0, 0, 0, 0.05);
+  transition: box-shadow 0.28s ease, transform 0.28s ease;
+}
+.border.rounded:hover {
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.09),
+              0 10px 32px rgba(0, 0, 0, 0.07);
+}
+
+/* Table inside a card shouldn't show its own bg */
+.border.rounded .table {
+  background-color: transparent;
+}
+
+/* ── Buttons ──────────────────────────────────────────────── */
+.btn {
+  transition: background-color 0.2s ease,
+              border-color     0.2s ease,
+              color            0.2s ease,
+              box-shadow       0.2s ease,
+              transform        0.15s ease;
+  will-change: transform;
+}
+.btn:not(:disabled):hover  { transform: translateY(-2px); }
+.btn:not(:disabled):active { transform: translateY(0); }
+
+.btn-dark {
+  background-color: #000;
+  border-color: #000;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.18);
+}
+.btn-dark:hover, .btn-dark:focus {
+  background-color: #1a1a1a;
+  border-color: #1a1a1a;
+  box-shadow: 0 5px 18px rgba(0, 0, 0, 0.24);
+}
+
+.btn-outline-dark:hover, .btn-outline-dark:focus {
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.16);
+}
+
+/* Ripple keyframe (triggered from panel-theme.js) */
+@keyframes panelRipple {
+  to { transform: scale(1); opacity: 0; }
+}
+
+/* ── Form controls ────────────────────────────────────────── */
+.form-control {
+  background-color: #fff;
+  border-color: rgba(0, 0, 0, 0.14);
+  transition: border-color 0.2s ease, box-shadow 0.2s ease;
+}
+.form-control:focus {
+  background-color: #fff;
+  border-color: #000;
+  box-shadow: 0 0 0 3px rgba(0, 0, 0, 0.08);
+  color: #000;
+}
+.form-control::placeholder {
+  color: rgba(0, 0, 0, 0.32);
+}
+.form-control.is-invalid {
+  border-color: #dc3545;
+  box-shadow: none;
+}
+.form-control.is-invalid:focus {
+  box-shadow: 0 0 0 3px rgba(220, 53, 69, 0.12);
+}
+
+/* Input group inherits the white bg */
+.input-group > .form-control { background-color: #fff; }
+
+/* ── Radio & checkbox ─────────────────────────────────────── */
+.form-check-input:checked {
+  background-color: #000;
+  border-color: #000;
+}
+.form-check-input:focus {
+  box-shadow: 0 0 0 3px rgba(0, 0, 0, 0.1);
+  border-color: #000;
+}
+
+/* ── Alerts ───────────────────────────────────────────────── */
+.alert {
+  animation: alertSlideIn 0.3s cubic-bezier(0.22, 1, 0.36, 1) both;
+  border-radius: 8px;
+}
+@keyframes alertSlideIn {
+  from { opacity: 0; transform: translateY(-8px); }
+  to   { opacity: 1; transform: translateY(0);    }
+}
+
+/* ── Tables ───────────────────────────────────────────────── */
+.table > tbody > tr {
+  transition: background-color 0.15s ease;
+}
+.table > tbody > tr:hover {
+  background-color: rgba(0, 0, 0, 0.025);
+}
+
+/* ── Progress bar ─────────────────────────────────────────── */
+.progress {
+  background-color: rgba(0, 0, 0, 0.08);
+  border-radius: 99px;
+  overflow: hidden;
+}
+.progress-bar {
+  transition: width 0.9s cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+/* ── Accordion (FAQs) ─────────────────────────────────────── */
+.accordion {
+  background-color: #fff;
+}
+.accordion-item {
+  background-color: #fff;
+}
+.accordion-button {
+  background-color: #fff;
+  transition: background-color 0.2s ease, color 0.2s ease;
+}
+.accordion-button:not(.collapsed) {
+  color: #000;
+  background-color: rgba(0, 0, 0, 0.025);
+  box-shadow: none;
+}
+.accordion-button:focus {
+  box-shadow: none;
+  border-color: transparent;
+}
+.accordion-button::after {
+  filter: brightness(0);
+}
+
+/* ── Nav pills (tasks + change-password tabs) ─────────────── */
+.nav-pills .nav-link {
+  transition: background-color 0.2s ease, color 0.2s ease,
+              box-shadow 0.2s ease;
+}
+#historyTabs .nav-link.active,
+#pwdTabs     .nav-link.active  {
+  background-color: #000 !important;
+  color: #fff !important;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.18);
+}
+#historyTabs .nav-link:not(.active),
+#pwdTabs     .nav-link:not(.active) {
+  color: #000 !important;
+}
+
+/* ── Badges ───────────────────────────────────────────────── */
+.badge {
+  transition: box-shadow 0.2s ease;
+}
+
+/* ── Links ────────────────────────────────────────────────── */
+a {
+  transition: color 0.2s ease, opacity 0.2s ease;
+}
+
+/* ── Section backgrounds are transparent → shows #EAEDF0 ──── */
+section {
+  position: relative;
+}
+
+/* ── Split-screen image panel stays full-height on desktop ─── */
+@media (min-width: 992px) {
+  .vh-lg-100 {
+    min-height: 100vh;
+  }
+}
+
+/* ── Mobile navbar — solid dark bar for visibility ────────── */
+@media (max-width: 991.98px) {
+  .fancynavbar-togglerbar {
+    background-color: #000 !important;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    box-shadow: 0 2px 12px rgba(0, 0, 0, 0.28);
+    transition: box-shadow 0.2s ease;
+  }
+  .fancynavbar-togglerbar .fancynavbar-toggler-icon path {
+    stroke: #fff;
+  }
+  .fancynavbar-brand-img {
+    filter: brightness(0) invert(1);
+  }
+  /* Slightly enlarge toggle hit area */
+  .fancynavbar-toggler {
+    padding: 8px;
+  }
+}
+
+/* ── Footer ───────────────────────────────────────────────── */
+.footer {
+  box-shadow: 0 -1px 0 rgba(255, 255, 255, 0.06);
+}
