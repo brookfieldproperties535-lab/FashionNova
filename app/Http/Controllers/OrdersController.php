@@ -26,9 +26,11 @@ class OrdersController extends Controller
         // Calculate the available balance for the user
         $funds = Funds::where('user_id', $user->id)
         ->whereIn('type', ['deposit', 'commission'])
+        ->whereIn('status', ['active', 'deactive'])
         ->sum('amount')
         - Funds::where('user_id', $user->id)
             ->where('type', 'withdrawal')
+            ->whereIn('status', ['active', 'deactive'])
             ->sum('amount');
 
         // Get today's completed orders count
@@ -298,9 +300,11 @@ class OrdersController extends Controller
         // Fetch user's funds (deposit + commission - withdrawal)
         $funds = Funds::where('user_id', $userId)
                     ->whereIn('type', ['deposit', 'commission'])
+                    ->whereIn('status', ['active', 'deactive'])
                     ->sum('amount')
                     - Funds::where('user_id', $userId)
                         ->where('type', 'withdrawal')
+                        ->whereIn('status', ['active', 'deactive'])
                         ->sum('amount');
 
         // Fetch today's orders and their counts

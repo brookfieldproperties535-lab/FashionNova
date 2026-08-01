@@ -610,6 +610,6 @@ class ProfileController extends Controller
             'status' => 'pending',
         ]);
 
-        return redirect()->route('user.dashboard')->with('success', 'Your funds have been submitted and will be shown in your account soon.');
+        return redirect()->route('user.recharge')->with('success', 'Your funds have been submitted and will be shown in your account soon.');
     }
 }

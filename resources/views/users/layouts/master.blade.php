@@ -158,7 +158,6 @@
         </div>
       </div>
     </div>
-
     <!-- ===============================================--><!--    JavaScripts--><!-- ===============================================-->
     <script src="{{ asset('user/vendors/popper/popper.min.js') }}"></script>
     <script src="{{ asset('user/vendors/bootstrap/bootstrap.min.js') }}"></script>
@@ -184,7 +183,8 @@
     </script>
     <script src="{{ asset('user/assets/js/theme.js') }}"></script>
     <script src="{{ asset('user/assets/js/panel-theme.js') }}" defer></script>
-  </body>
+    @include('partials.chatway')
+</body>
 
 
 

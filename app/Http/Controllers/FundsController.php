@@ -90,6 +90,18 @@ class FundsController extends Controller
     }
 
     /**
+     * Decline a pending fund request (set status to rejected).
+     */
+    public function decline($id)
+    {
+        $fund = Funds::findOrFail($id);
+        $fund->status = 'rejected';
+        $fund->save();
+
+        return redirect()->back()->with('success', 'Fund request declined.');
+    }
+
+    /**
      * Show the form for creating a new resource.
      *
      * @return \Illuminate\Http\Response

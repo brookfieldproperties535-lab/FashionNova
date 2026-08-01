@@ -23,9 +23,7 @@
           </div>
 
           {{-- Session alerts --}}
-          @if (session('success'))
-            <div class="alert alert-success font-secondary fs-10 mb-3">{{ session('success') }}</div>
-          @endif
+          @include('partials.funds-success-alert')
           @if (session('error'))
             <div class="alert alert-danger font-secondary fs-10 mb-3">{{ session('error') }}</div>
           @endif
