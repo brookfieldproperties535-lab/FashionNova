@@ -39,13 +39,7 @@
               <div class="mb-5">
                 <div class="overflow-hidden">
                   <h1 class="text-decoration-underline fs-5 fs-md-4 mb-0"
-                    data-zanim-xs='{"delay":0.4}' data-zanim-trigger="scroll">terms of use</h1>
-                </div>
-                <div class="overflow-hidden mt-2">
-                  <p class="fst-italic text-body-tertiary"
-                    data-zanim-xs='{"delay":0.45}' data-zanim-trigger="scroll">
-                    Last updated: January 1, 2025
-                  </p>
+                    data-zanim-xs='{"delay":0.4}' data-zanim-trigger="scroll">Terms of use</h1>
                 </div>
               </div>
 
@@ -54,7 +48,7 @@
                 Welcome to Fashion Nova. By creating an account or using our services you agree to the
                 rules set out below. These terms govern your use of FashionNova.com and protect the
                 interests of every member of our community. For any questions, please contact
-                <a href="mailto:support@fashionnova.com" class="text-body-emphasis">support@fashionnova.com</a>.
+                <a href="mailto:support@fashionnovastore.online" class="text-body-emphasis">support@fashionnovastore.online</a>.
               </p>
 
               {{-- Rule 1 --}}
@@ -111,8 +105,7 @@
                 </div>
                 <p class="text-justify">
                   Your membership tier determines how many evaluations you can complete each day.
-                  Evaluations reset every day at 00:00 (server time). Unfinished evaluations from the
-                  previous day will not be carried over.
+
                 </p>
               </div>
 

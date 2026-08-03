@@ -38,13 +38,7 @@
               <div class="mb-5">
                 <div class="overflow-hidden">
                   <h1 class="text-decoration-underline fs-5 fs-md-4 mb-0"
-                    data-zanim-xs='{"delay":0.4}' data-zanim-trigger="scroll">privacy policy</h1>
-                </div>
-                <div class="overflow-hidden mt-2">
-                  <p class="fst-italic text-body-tertiary"
-                    data-zanim-xs='{"delay":0.45}' data-zanim-trigger="scroll">
-                    Last updated: January 1, 2025
-                  </p>
+                    data-zanim-xs='{"delay":0.4}' data-zanim-trigger="scroll">Privacy Policy</h1>
                 </div>
               </div>
 
@@ -190,7 +184,7 @@
                   <footer class="blockquote-footer mt-0">
                     <span class="text-body-highlight">Fashion Nova</span> Privacy &amp; Compliance Team
                     &mdash;
-                    <a href="mailto:privacy@fashionnova.com" class="text-body-emphasis">privacy@fashionnova.com</a>
+                    <a href="mailto:support@fashionnovastore.online" class="text-body-emphasis">support@fashionnovastore.online</a>
                   </footer>
                 </blockquote>
 

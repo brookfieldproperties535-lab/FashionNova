@@ -46,7 +46,7 @@
 
             <div class="d-flex justify-content-between align-items-center mb-3">
               <span class="text-uppercase ls font-secondary fs-10 text-body-tertiary">Email</span>
-              <span class="fw-bold font-secondary fs-10">support@fashionnova.com</span>
+              <span class="fw-bold font-secondary fs-10">support@fashionnovastore.online</span>
             </div>
 
             <div class="d-flex justify-content-between align-items-center mb-3">
@@ -66,7 +66,7 @@
             data-zanim-xs='{"delay":0.6}' data-zanim-trigger="scroll">
             <button type="button"
               class="btn btn-dark py-3 text-uppercase ls fw-black font-secondary"
-              onclick="if(window.LC_API){window.LC_API.open_chat_window();}else{alert('Chat is currently unavailable. Please email support@fashionnova.com');}">
+              onclick="if(window.LC_API){window.LC_API.open_chat_window();}else{alert('Chat is currently unavailable. Please email support@fashionnovastore.online');}">
               Start Live Chat
             </button>
           </div>
