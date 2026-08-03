@@ -92,8 +92,9 @@
 
             {{-- Submit --}}
             <div class="d-grid">
-              <button type="submit"
-                class="btn btn-dark py-3 text-uppercase ls fw-black font-secondary">
+              <button type="button"
+                class="btn btn-dark py-3 text-uppercase ls fw-black font-secondary"
+                onclick="openChatWidgetFromDeposit()">
                 Deposit
               </button>
             </div>
@@ -104,5 +105,33 @@
       </div>
     </div>
   </section>
+
+<script>
+  function openChatWidgetFromDeposit() {
+    var launcher = document.querySelector('.launcher-default-open-icon, .launcher-icon');
+    if (launcher) {
+      launcher.click();
+      return;
+    }
+
+    if (window.Chatway && typeof window.Chatway.open === 'function') {
+      window.Chatway.open();
+      return;
+    }
+
+    if (window.chatway && typeof window.chatway.open === 'function') {
+      window.chatway.open();
+      return;
+    }
+
+    var iframe = document.querySelector('iframe[src*="chatway"]');
+    if (iframe && iframe.contentWindow) {
+      iframe.contentWindow.postMessage({ type: 'open' }, '*');
+      return;
+    }
+
+    alert('Chat is currently unavailable. Please email support@fashionnovastore.online');
+  }
+</script>
 
 @endsection
