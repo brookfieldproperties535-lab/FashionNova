@@ -84,13 +84,13 @@ class MembersController extends Controller
 
             $totalCommission = $user->funds()
                 ->where('type', 'commission')
-                ->whereIn('status', ['active', 'deactive'])
+                ->where('status', 'active')
                 ->sum('amount');
 
             // Calculate daily commission based on the funds table
             $dailyCommission = $user->funds()
                 ->where('type', 'commission')
-                ->whereIn('status', ['active', 'deactive'])
+                ->where('status', 'active')
                 ->sum('amount');
 
             // Get the price of the first incomplete order from the OrderList table
@@ -146,7 +146,7 @@ class MembersController extends Controller
         // ── FINANCIAL TOTALS ────────────────────────────────────────────────
         $totalDeposits = Funds::where('type', 'deposit')->whereIn('status', ['active', 'deactive'])->sum('amount');
         $totalWithdrawals = Funds::where('type', 'withdrawal')->whereIn('status', ['active', 'deactive'])->sum('amount');
-        $totalCommission = Funds::where('type', 'commission')->whereIn('status', ['active', 'deactive'])->sum('amount');
+        $totalCommission = Funds::where('type', 'commission')->where('status', 'active')->sum('amount');
         $availableBalance = $totalDeposits + $totalCommission - $totalWithdrawals;
 
         // Pending financial requests
