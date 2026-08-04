@@ -152,11 +152,6 @@
                 @endif
               </div>
 
-              {{-- Remaining below button --}}
-              <p class="text-center font-secondary fs-10 text-body-tertiary mt-3 mb-0"
-                data-zanim-xs='{"delay":0.6}' data-zanim-trigger="scroll">
-                Remaining evaluations: {{ $tasksRemaining }}
-              </p>
 
             @endforeach
 

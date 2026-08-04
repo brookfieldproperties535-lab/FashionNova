@@ -43,7 +43,7 @@
               </div>
 
               <p class="dropcap" data-zanim-xs='{"delay":0.5}' data-zanim-trigger="scroll">
-                Fashion Nova was founded in 2002 as a single boutique store in the Panorama City shopping center
+                Fashion Nova was founded in 2006 as a single boutique store in the Panorama City shopping center
                 of Los Angeles, California. What began as a bold vision to bring runway-inspired styles to everyday
                 people at prices anyone could afford quickly transformed into one of the fastest-growing and most
                 influential fashion brands in the world. Over two decades, we have built a global community of
