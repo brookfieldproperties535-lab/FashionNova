@@ -135,7 +135,7 @@
             <p class="fs-10 text-uppercase ls fw-bold mb-0">Copyright &copy; 2025 Fashion Nova&trade; inc.</p>
           </div>
           <div class="col-lg-4 text-lg-end order-lg-2 mt-2 mt-lg-0">
-            <p class="fs-10 text-uppercase ls fw-bold mb-0">Made with<span class="text-danger fas fa-heart mx-1"></span>by <a class="text-body-secondary" href="https://themewagon.com/" target="_blank">Themewagon</a></p>
+            <p class="fs-10 text-uppercase ls fw-bold mb-0">All Rights Reserved.</p>
           </div>
         </div>
       </div>

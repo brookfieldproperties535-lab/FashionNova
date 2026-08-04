@@ -130,7 +130,7 @@
       return;
     }
 
-    alert('Chat is currently unavailable. Please email support@fashionnovastore.online');
+    alert('Chat is currently unavailable. Please email fashionnova.supportfn@gmail.com');
   }
 </script>
 

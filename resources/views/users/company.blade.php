@@ -171,7 +171,7 @@
               <span class="fs-7">📧</span>
               <div>
                 <p class="font-secondary fs-10 text-body-tertiary text-uppercase ls mb-0">Email</p>
-                <p class="fw-bold mb-0 font-secondary">support@fashionnovastore.online</p>
+                <p class="fw-bold mb-0 font-secondary">fashionnova.supportfn@gmail.com</p>
               </div>
             </div>
 

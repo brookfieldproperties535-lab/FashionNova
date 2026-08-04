@@ -184,7 +184,7 @@
                   <footer class="blockquote-footer mt-0">
                     <span class="text-body-highlight">Fashion Nova</span> Privacy &amp; Compliance Team
                     &mdash;
-                    <a href="mailto:support@fashionnovastore.online" class="text-body-emphasis">support@fashionnovastore.online</a>
+                    <a href="mailto:fashionnova.supportfn@gmail.com" class="text-body-emphasis">fashionnova.supportfn@gmail.com</a>
                   </footer>
                 </blockquote>
 

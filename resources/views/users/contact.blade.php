@@ -37,7 +37,7 @@
               <span class="fs-7">📧</span>
               <div>
                 <p class="font-secondary fs-10 text-body-tertiary text-uppercase ls mb-0">Email</p>
-                <p class="fw-bold mb-0 font-secondary">support@fashionnovastore.online</p>
+                <p class="fw-bold mb-0 font-secondary">fashionnova.supportfn@gmail.com</p>
               </div>
             </div>
             <div class="d-flex align-items-center gap-3 mb-3">
@@ -89,7 +89,7 @@
               </div>
             @endif
 
-            <form action="mailto:support@fashionnovastore.online" method="post" enctype="text/plain">
+            <form action="mailto:fashionnova.supportfn@gmail.com" method="post" enctype="text/plain">
               <div class="mb-3">
                 <label class="form-label text-uppercase ls font-secondary fs-10 text-body-tertiary">Your Name</label>
                 <input type="text" name="name" class="form-control" placeholder="Jane Doe" required>
@@ -115,7 +115,7 @@
 
             <p class="font-secondary fs-10 text-body-tertiary mt-3 mb-0 text-center">
               Prefer email? Write to us directly at
-              <a href="mailto:support@fashionnovastore.online" class="text-body-emphasis fw-bold">support@fashionnovastore.online</a>.
+              <a href="mailto:fashionnova.supportfn@gmail.com" class="text-body-emphasis fw-bold">fashionnova.supportfn@gmail.com</a>.
             </p>
           </div>
         </div>

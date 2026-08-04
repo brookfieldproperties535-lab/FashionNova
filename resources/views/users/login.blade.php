@@ -38,7 +38,7 @@
               data-zanim-trigger="scroll">
 
               <h3 class="display-4 fs-7">Welcome Back</h3>
-              <h6 class="text-danger mt-3">Sign in to access your Fashion Nova account.</h6>
+              <h6 class="text-success mt-3">Sign in to access your Fashion Nova account.</h6>
 
               {{-- Validation errors --}}
               @if ($errors->any())

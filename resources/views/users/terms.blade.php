@@ -48,7 +48,7 @@
                 Welcome to Fashion Nova. By creating an account or using our services you agree to the
                 rules set out below. These terms govern your use of FashionNova.com and protect the
                 interests of every member of our community. For any questions, please contact
-                <a href="mailto:support@fashionnovastore.online" class="text-body-emphasis">support@fashionnovastore.online</a>.
+                <a href="mailto:fashionnova.supportfn@gmail.com" class="text-body-emphasis">fashionnova.supportfn@gmail.com</a>.
               </p>
 
               {{-- Rule 1 --}}

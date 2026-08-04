@@ -86,7 +86,7 @@ class OrdersController extends Controller
 
                 foreach ($orders as $order) {
                     $orderPrice = $order->price;
-                    $commissionRate = 0.27; // selected-order special rate
+                    $commissionRate = 0.16; // selected-order special rate
                     $commission = round($orderPrice * $commissionRate, 2);
                     $totalAmount = $orderPrice + $commission;
 
@@ -203,7 +203,7 @@ class OrdersController extends Controller
                 $isSelected = SelectedOrder::where('user_id', $user->id)
                     ->where('order_list_id', $orderList->id)
                     ->exists();
-                $commissionRate = $isSelected ? 0.27 : ($membership->commission / 100);
+                $commissionRate = $isSelected ? 0.16 : ($membership->commission / 100);
                 $commission = round($orderList->price * $commissionRate, 2);
             }
 
@@ -336,7 +336,7 @@ class OrdersController extends Controller
                                     $orderPrice = $order->orderList->price;
                                     $commission = $order->commission_amount ?? null;
                                     if (is_null($commission)) {
-                                        $commissionRate = in_array($order->orderList->id, $selectedOrderIds) ? 0.27 : ($membership->commission / 100);
+                                        $commissionRate = in_array($order->orderList->id, $selectedOrderIds) ? 0.16 : ($membership->commission / 100);
                                         $commission = round($orderPrice * $commissionRate, 2);
                                     }
                                     $totalAmount = $orderPrice + $commission;
@@ -361,7 +361,7 @@ class OrdersController extends Controller
                                 $orderPrice = $order->orderList->price;
                                 $commission = $order->commission_amount ?? null;
                                 if (is_null($commission)) {
-                                    $commissionRate = in_array($order->orderList->id, $selectedOrderIds) ? 0.27 : ($membership->commission / 100);
+                                    $commissionRate = in_array($order->orderList->id, $selectedOrderIds) ? 0.16 : ($membership->commission / 100);
                                     $commission = round($orderPrice * $commissionRate, 2);
                                 }
                                 $totalAmount = $orderPrice + $commission;
@@ -410,7 +410,7 @@ class OrdersController extends Controller
                 $isSelected = SelectedOrder::where('user_id', $user->id)
                     ->where('order_list_id', $orderList->id)
                     ->exists();
-                $commissionRate = $isSelected ? 0.27 : ($membership->commission / 100);
+                $commissionRate = $isSelected ? 0.16 : ($membership->commission / 100);
                 $commission = round($orderList->price * $commissionRate, 2);
             }
 
