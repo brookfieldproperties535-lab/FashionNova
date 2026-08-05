@@ -175,14 +175,6 @@
               </div>
             </div>
 
-            <div class="d-flex align-items-center gap-3 mb-3">
-              <span class="fs-7">📞</span>
-              <div>
-                <p class="font-secondary fs-10 text-body-tertiary text-uppercase ls mb-0">Phone</p>
-                <p class="fw-bold mb-0 font-secondary">+1 (800) 555-0174</p>
-              </div>
-            </div>
-
             <div class="d-flex align-items-center gap-3">
               <span class="fs-7">🏢</span>
               <div>

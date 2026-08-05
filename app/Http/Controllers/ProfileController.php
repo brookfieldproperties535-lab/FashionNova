@@ -278,7 +278,7 @@ class ProfileController extends Controller
             // Opening balance for new user
             $funds = new Funds();
             $funds->user_id = $user->id;
-            $funds->amount = 5;
+            $funds->amount = 10;
             $funds->type = 'deposit';
             $funds->status = 'active';
             $funds->save();
