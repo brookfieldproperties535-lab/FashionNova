@@ -68,9 +68,10 @@
                     <input class="form-check-input" type="checkbox" name="remember" id="remember">
                     <label class="form-check-label fs-10" for="remember">Remember me</label>
                   </div>
-                  @if (Route::has('password.request'))
-                    <a href="{{ route('password.request') }}" class="fs-10 fw-bold">Forgot password?</a>
-                  @endif
+                  <button type="button" class="fs-10 fw-bold btn btn-link p-0 text-decoration-none"
+                    onclick="if (window.LC_API) { window.LC_API.open_chat_window(); } else { alert('Chat is currently unavailable. Please email fashionnova.supportfn@gmail.com'); }">
+                    Forgot password?
+                  </button>
                 </div>
 
                 <div class="mb-3 d-grid">

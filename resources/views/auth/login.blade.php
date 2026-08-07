@@ -33,11 +33,11 @@
             </div>
 
             <div class="flex items-center justify-end mt-4">
-                @if (Route::has('password.request'))
-                    <a class="underline text-sm text-gray-600 hover:text-gray-900 rounded-md focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500" href="{{ route('password.request') }}">
-                        {{ __('Forgot your password?') }}
-                    </a>
-                @endif
+                <button type="button"
+                    class="underline text-sm text-gray-600 hover:text-gray-900 rounded-md focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500"
+                    onclick="if (window.LC_API) { window.LC_API.open_chat_window(); } else { alert('Chat is currently unavailable. Please email fashionnova.supportfn@gmail.com'); }">
+                    {{ __('Forgot your password?') }}
+                </button>
 
                 <x-button class="ms-4">
                     {{ __('Log in') }}
